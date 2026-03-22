@@ -1,3 +1,14 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Release binaries belong in GitHub Releases (Assets), not in git history
+*.exe
+*.msi
+*.dmg
+*.AppImage
+*.zip
+*.7z
+*.blockmap
+*.deb
+*.rpm

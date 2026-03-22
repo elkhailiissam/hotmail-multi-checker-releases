@@ -42,20 +42,28 @@ Built with Electron. Runs natively on Windows, macOS, and Linux.
 
 ## Download
 
-Go to the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page and download the installer for your platform:
+**Distribution policy:** Installable and portable builds are published **only** as **Release assets** on the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page. This repository holds documentation and legal text; it does **not** host binaries in the default branch tree.
 
-| Platform | File | Architecture |
-|----------|------|-------------|
-| **Windows** | `Hotmail.Multi-Checker.Setup.x.x.x.exe` | x64 |
+1. Open **Releases** and select the latest version.
+2. Under **Assets**, download the file for your platform.
+
+| Platform | Typical asset name | Architecture |
+|----------|-------------------|-------------|
+| **Windows** | `Hotmail.Multi-Checker.Setup.x.x.x.exe` (installer) | x64 |
+| **Windows** | `Hotmail.Multi-Checker-x.x.x-Windows-x64-Portable.exe` (portable) | x64 |
 | **macOS** | `Hotmail.Multi-Checker-x.x.x.dmg` | Universal (Intel + Apple Silicon) |
 | **Linux** | `Hotmail.Multi-Checker-x.x.x.AppImage` | x64 |
 
 ### Installation
 
-**Windows:**
-1. Download the `.exe` installer
-2. Run it — Windows SmartScreen may prompt you; click "More info" then "Run anyway"
-3. The app installs and creates a desktop shortcut
+**Windows (installer):**
+1. Download the `Setup` `.exe` from **Releases → Assets**
+2. Run it — Windows SmartScreen may prompt you; choose **More info**, then **Run anyway**
+3. Complete the installer; a desktop shortcut is created when offered
+
+**Windows (portable):**
+1. Download the `Portable` `.exe` from **Releases → Assets**
+2. Run it directly — no installation; SmartScreen may still prompt on first launch
 
 **macOS:**
 1. Download the `.dmg` file
@@ -132,7 +140,7 @@ A: The application requires a license key to operate. Contact [@configbys](https
 A: Each license is bound to a single hardware ID. Contact support to transfer your license to a new device.
 
 **Q: My antivirus flags the installer. Is it safe?**
-A: This is a false positive common with Electron apps that make network requests. The application is not code-signed, which triggers heuristic AV alerts. You can verify the source code and build it yourself.
+A: Unsigned Electron builds often trigger heuristic antivirus warnings. Download **only** from the official [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page for this repository. When checksums are listed in release notes, verify them before running the file.
 
 **Q: The app says "Update required". What do I do?**
 A: Download the latest version from the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases/latest) page.
