@@ -36,9 +36,8 @@ Built with Electron. Runs natively on Windows, macOS, and Linux.
 
 ## Screenshots
 
-<div align="center">
-<i>Screenshots coming soon</i>
-</div>
+<img width="3360" height="2100" alt="image" src="https://github.com/user-attachments/assets/ac706154-c0bf-476a-a92e-5755dce89061" />
+
 
 ## Download
 
