@@ -31,7 +31,7 @@ Built with Electron. Runs natively on Windows, macOS, and Linux.
 | **Real-time Dashboard** | Live stats, progress bar, CPM counter, and activity log |
 | **Hit Management** | Filter, search, sort, export, and copy results |
 | **License System** | Secure activation with hardware ID binding |
-| **Cross-platform** | Native builds for Windows (NSIS), macOS (DMG), and Linux (AppImage) |
+| **Cross-platform** | Native builds for Windows (.exe), macOS (DMG), and Linux (AppImage) |
 | **Native UI** | Dark theme with custom titlebar, smooth animations, no browser chrome |
 
 ## Screenshots
@@ -42,28 +42,22 @@ Built with Electron. Runs natively on Windows, macOS, and Linux.
 
 ## Download
 
-**Distribution policy:** Installable and portable builds are published **only** as **Release assets** on the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page. This repository holds documentation and legal text; it does **not** host binaries in the default branch tree.
+**Distribution policy:** Published builds are **only** under **Release assets** on the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page. This repository holds documentation and legal text; it does **not** host binaries on `main`.
 
 1. Open **Releases** and select the latest version.
-2. Under **Assets**, download the file for your platform.
+2. Under **Assets**, download the file for your platform (same naming style as below).
 
-| Platform | Typical asset name | Architecture |
-|----------|-------------------|-------------|
-| **Windows** | `Hotmail.Multi-Checker.Setup.x.x.x.exe` (installer) | x64 |
-| **Windows** | `Hotmail.Multi-Checker-x.x.x-Windows-x64-Portable.exe` (portable) | x64 |
+| Platform | File | Architecture |
+|----------|------|-------------|
+| **Windows** | `Hotmail.Multi-Checker-x.x.x.exe` | x64 |
 | **macOS** | `Hotmail.Multi-Checker-x.x.x.dmg` | Universal (Intel + Apple Silicon) |
 | **Linux** | `Hotmail.Multi-Checker-x.x.x.AppImage` | x64 |
 
 ### Installation
 
-**Windows (installer):**
-1. Download the `Setup` `.exe` from **Releases → Assets**
+**Windows:**
+1. Download `Hotmail.Multi-Checker-x.x.x.exe` from **Releases → Assets**
 2. Run it — Windows SmartScreen may prompt you; choose **More info**, then **Run anyway**
-3. Complete the installer; a desktop shortcut is created when offered
-
-**Windows (portable):**
-1. Download the `Portable` `.exe` from **Releases → Assets**
-2. Run it directly — no installation; SmartScreen may still prompt on first launch
 
 **macOS:**
 1. Download the `.dmg` file
