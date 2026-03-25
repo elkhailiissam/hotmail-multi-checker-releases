@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-- Distribution policy: binaries are published as GitHub Release assets only; repository `main` stays documentation-only for builds.
-- Windows v1.0.0 asset aligned with macOS/Linux naming: `Hotmail.Multi-Checker-1.0.0.exe` (single download).
+## [1.1.0] - 2026-03-25
+
+### Added
+- Windows x64: `Hotmail.Multi-Checker-1.1.0.exe` (GitHub Release asset)
+- Custom module (search inbox by sender)
+- CPM stat, proxy management page with format selector and live testing
+- Capture category toggles, multi-country filter, Graph-based country and birthday capture
+- Compact home layout; license trial flow (see app release notes)
 
 ## [1.0.0] - 2026-03-22
 
