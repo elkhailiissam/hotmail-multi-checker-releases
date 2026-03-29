@@ -6,6 +6,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+## [2.1.2] - 2026-03-29
+
+### Changed
+- Refined the Windows desktop release with a focused stability pass
+- Improved release consistency for the current Windows-only update track
+
+### Fixed
+- Addressed reliability issues in the native Windows runtime
+- Tightened retry and recovery behavior across checker-side background operations
+
+### Notes
+- Windows remains the only platform receiving active updates
+- macOS and Linux remain archived at `1.1.0`
+
 ## [2.1.0] - 2026-03-29
 
 ### Changed

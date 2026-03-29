@@ -28,9 +28,9 @@
 
 ### Windows
 
-- Current public line: **`2.1.0`**
+- Current public line: **`2.1.2`**
 - Architecture: **x64**
-- Asset name: `Hotmail.Multi-Checker-2.1.0.exe`
+- Asset name: `Hotmail.Multi-Checker-2.1.2.exe`
 - Runtime: native Windows desktop application
 
 ### Legacy Archived Builds
@@ -61,7 +61,7 @@ Open [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/
 
 | Platform | Version | File |
 |----------|---------|------|
-| Windows x64 | `2.1.0` | `Hotmail.Multi-Checker-2.1.0.exe` |
+| Windows x64 | `2.1.2` | `Hotmail.Multi-Checker-2.1.2.exe` |
 
 ### Archived Downloads
 
@@ -74,7 +74,7 @@ Open [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/
 
 ### Windows
 
-1. Download `Hotmail.Multi-Checker-2.1.0.exe` from the latest release.
+1. Download `Hotmail.Multi-Checker-2.1.2.exe` from the latest release.
 2. Run the executable.
 3. If SmartScreen appears, click **More info** and then **Run anyway**.
 
