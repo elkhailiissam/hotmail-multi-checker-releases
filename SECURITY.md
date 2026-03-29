@@ -2,24 +2,23 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in this software, please report it responsibly:
+Please do **not** open a public issue for security-sensitive problems.
 
-1. **Do not** create a public GitHub issue
-2. Contact us directly via [Telegram @configbys](https://t.me/configbys)
-3. Include a detailed description of the vulnerability and steps to reproduce
+Instead:
 
-We will acknowledge receipt within 48 hours and provide a timeline for a fix.
+1. Contact [@configbys](https://t.me/configbys) on Telegram
+2. Include a clear description, impact, and reproduction steps
+3. Mention the exact version you tested
 
 ## Supported Versions
 
 | Version | Supported |
 |---------|-----------|
-| 1.0.x   | Yes       |
+| 2.1.x   | Yes |
+| 1.1.x   | Archived only |
+| 1.0.x   | No |
 
-## Security Measures
+## Notes
 
-- All client-server communication is encrypted with AES-256-GCM
-- License keys are validated server-side with hardware ID binding
-- Admin panel protected by JWT authentication
-- No credentials are stored locally — only the license key
-- Embedded server binds to `127.0.0.1` only (not network-accessible)
+- Windows is the only actively maintained public release line
+- macOS and Linux `1.1.0` downloads are historical archives, not active support targets

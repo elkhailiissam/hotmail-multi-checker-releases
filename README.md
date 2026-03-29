@@ -1,154 +1,105 @@
-# Hotmail Multi-Checker
+# Hotmail Multi-Checker Releases
 
 <div align="center">
 
 ![Version](https://img.shields.io/github/v/release/elkhailiissam/hotmail-multi-checker-releases?style=flat-square&color=3B82F6)
-![Downloads](https://img.shields.io/github/downloads/elkhailiissam/hotmail-multi-checker-releases/total?style=flat-square&color=22c55e)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)
-![License](https://img.shields.io/badge/license-Educational-yellow?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/elkhailiissam/hotmail-multi-checker-releases/total?style=flat-square&color=22C55E)
+![Platform](https://img.shields.io/badge/platform-Windows%20x64-3B82F6?style=flat-square)
+![Status](https://img.shields.io/badge/future%20updates-Windows%20only-0F172A?style=flat-square)
 
-**A cross-platform desktop application for Outlook/Hotmail account analysis and linked service detection.**
+**Official public releases repository for Mr Robot Hotmail Multi-Checker.**
 
-Built with Electron. Runs natively on Windows, macOS, and Linux.
-
-[Download Latest Release](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases/latest)
+[Download Latest Windows Release](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases/latest)
 
 </div>
 
 ---
 
-> **Disclaimer:** This software is provided strictly for **educational and research purposes only**. It is designed to demonstrate concepts in email API interaction, OAuth authentication flows, and desktop application development. The authors do not endorse or encourage any unauthorized access to accounts. Users are solely responsible for ensuring their use complies with all applicable laws and terms of service. See [LEGAL.md](LEGAL.md) for full details.
+> **Disclaimer:** This software is published strictly for educational and research purposes. Users are solely responsible for ensuring any use complies with applicable law, platform terms, and account ownership requirements. See [LEGAL.md](LEGAL.md) for full details.
 
----
+## Release Policy
 
-## Features
+- This repository is the public home for release notes, downloads, and user-facing documentation.
+- Published binaries belong under **GitHub Releases** only, not on the `main` branch.
+- **Windows is the only platform receiving future updates.**
+- **macOS and Linux remain archived at version `1.1.0`** for historical download only.
 
-| Feature | Description |
-|---------|-------------|
-| **Multi-threaded Engine** | Configurable worker pool (1-200 threads) for concurrent processing |
-| **Module Detection** | Detects linked PlayStation, Epic Games, and Instagram accounts via email analysis |
-| **Proxy Support** | Rotating proxy integration — paste or upload `.txt` proxy lists |
-| **Real-time Dashboard** | Live stats, progress bar, CPM counter, and activity log |
-| **Hit Management** | Filter, search, sort, export, and copy results |
-| **License System** | Secure activation with hardware ID binding |
-| **Cross-platform** | Native builds for Windows (.exe), macOS (DMG), and Linux (AppImage) |
-| **Native UI** | Dark theme with custom titlebar, smooth animations, no browser chrome |
+## Current Release Track
 
-## Screenshots
+### Windows
 
-<img width="3360" height="2100" alt="image" src="https://github.com/user-attachments/assets/ac706154-c0bf-476a-a92e-5755dce89061" />
+- Current public line: **`2.1.0`**
+- Architecture: **x64**
+- Asset name: `Hotmail.Multi-Checker-2.1.0.exe`
+- Runtime: native Windows desktop application
 
+### Legacy Archived Builds
 
-## Download
+- macOS: last published version **`1.1.0`**
+- Linux: last published version **`1.1.0`**
+- No future feature updates are planned for macOS or Linux downloads
 
-**Distribution policy:** Published builds are **only** under **Release assets** on the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page. This repository holds documentation and legal text; it does **not** host binaries on `main`.
+## What The App Does
 
-1. Open **Releases** and select the latest version.
-2. Under **Assets**, download the file for your platform (same naming style as below).
+Hotmail Multi-Checker is a desktop tool for reviewing Outlook/Hotmail credentials and related linked-service capture data.
 
-| Platform | File | Architecture |
-|----------|------|-------------|
-| **Windows** | `Hotmail.Multi-Checker-x.x.x.exe` | x64 |
-| **macOS** | `Hotmail.Multi-Checker-x.x.x.dmg` | Universal (Intel + Apple Silicon) |
-| **Linux** | `Hotmail.Multi-Checker-x.x.x.AppImage` | x64 |
+Core capabilities:
 
-### Installation
+- native Windows desktop interface
+- multi-threaded checking flow
+- real-time stats, progress, and activity logs
+- hit review, filtering, and export workflows
+- proxy upload, paste, and testing support
+- linked-service capture modules including PSN, Epic Games, Instagram, Xbox, Ubisoft, Riot, TikTok, and Reddit VIP detection
+- license activation and device-bound access control
 
-**Windows:**
-1. Download `Hotmail.Multi-Checker-x.x.x.exe` from **Releases → Assets**
-2. Run it — Windows SmartScreen may prompt you; choose **More info**, then **Run anyway**
+## Downloads
 
-**macOS:**
-1. Download the `.dmg` file
-2. Open it and drag the app to your Applications folder
-3. First launch: right-click the app, select "Open", then confirm (Gatekeeper unsigned app)
+Open [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) and choose the version you want.
 
-**Linux:**
-1. Download the `.AppImage` file
-2. Make it executable: `chmod +x Hotmail.Multi-Checker-*.AppImage`
-3. Run it: `./Hotmail.Multi-Checker-*.AppImage`
+### Current Recommended Download
 
-## Getting Started
+| Platform | Version | File |
+|----------|---------|------|
+| Windows x64 | `2.1.0` | `Hotmail.Multi-Checker-2.1.0.exe` |
 
-1. **Launch the app** — you'll see the activation screen
-2. **Enter your license key** — purchase one via [Telegram](https://t.me/configbys)
-3. **Load combos** — paste `email:password` lines or upload a `.txt` file
-4. **Select modules** — choose which services to scan for (PSN, Epic, Instagram)
-5. **Configure threads** — higher = faster, but more resource intensive
-6. **Optionally load proxies** — recommended for large combo lists
-7. **Click Start** — results stream in real-time to the dashboard
+### Archived Downloads
 
-## Modules
+| Platform | Last Version | Notes |
+|----------|--------------|-------|
+| macOS | `1.1.0` | Archived only, no future updates |
+| Linux | `1.1.0` | Archived only, no future updates |
 
-| Module | What It Detects |
-|--------|----------------|
-| **PSN** | PlayStation Network emails, purchase orders, account region, date of birth |
-| **Epic Games** | Epic/Fortnite account emails, purchase receipts, match history |
-| **Instagram** | Instagram account emails, username, follower count, login alerts |
+## Installation
+
+### Windows
+
+1. Download `Hotmail.Multi-Checker-2.1.0.exe` from the latest release.
+2. Run the executable.
+3. If SmartScreen appears, click **More info** and then **Run anyway**.
 
 ## System Requirements
 
 | | Minimum | Recommended |
 |---|---------|-------------|
-| **OS** | Windows 10, macOS 11, Ubuntu 20.04 | Windows 11, macOS 14, Ubuntu 22.04 |
-| **RAM** | 2 GB | 4 GB+ |
-| **Disk** | 200 MB | 500 MB |
-| **Network** | Broadband | Broadband + proxies |
-
-## Technical Architecture
-
-```
-┌─────────────────────────────────────────────┐
-│                 Electron Shell               │
-│  ┌────────────────────────────────────────┐  │
-│  │           Embedded Express Server      │  │
-│  │  ┌──────────┐  ┌───────────────────┐   │  │
-│  │  │ REST API │  │  SSE (real-time)  │   │  │
-│  │  └────┬─────┘  └────────┬──────────┘   │  │
-│  │       │                 │              │  │
-│  │  ┌────┴─────────────────┴──────────┐   │  │
-│  │  │       Async Worker Pool         │   │  │
-│  │  │  ┌───────┐ ┌───────┐ ┌───────┐ │   │  │
-│  │  │  │ Wkr 1 │ │ Wkr 2 │ │ Wkr N │ │   │  │
-│  │  │  └───┬───┘ └───┬───┘ └───┬───┘ │   │  │
-│  │  └──────┼─────────┼─────────┼──────┘   │  │
-│  └─────────┼─────────┼─────────┼──────────┘  │
-└────────────┼─────────┼─────────┼─────────────┘
-             │         │         │
-     ┌───────┴─────────┴─────────┴───────┐
-     │        Microsoft OAuth PKCE       │
-     │     Outlook Search API (REST)     │
-     │      Module Data Extraction       │
-     └───────────────────────────────────┘
-```
-
-**Stack:** Electron 41 | Express 5 | Undici (HTTP/2) | AES-256-GCM encryption
-
-## FAQ
-
-**Q: Is this free?**
-A: The application requires a license key to operate. Contact [@configbys](https://t.me/configbys) on Telegram to purchase.
-
-**Q: Can I use this on multiple devices?**
-A: Each license is bound to a single hardware ID. Contact support to transfer your license to a new device.
-
-**Q: My antivirus flags the installer. Is it safe?**
-A: Unsigned Electron builds often trigger heuristic antivirus warnings. Download **only** from the official [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) page for this repository. When checksums are listed in release notes, verify them before running the file.
-
-**Q: The app says "Update required". What do I do?**
-A: Download the latest version from the [Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases/latest) page.
-
-**Q: Proxies aren't working.**
-A: Supported formats: `host:port`, `host:port:user:pass`, `user:pass@host:port`. HTTP/HTTPS proxies only.
+| OS | Windows 10 x64 | Windows 11 x64 |
+| RAM | 4 GB | 8 GB+ |
+| Disk | 300 MB | 1 GB |
+| Network | Broadband | Broadband + proxy pool for large runs |
 
 ## Support
 
-- **Telegram:** [@configbys](https://t.me/configbys)
-- **Issues:** [GitHub Issues](https://github.com/elkhailiissam/hotmail-multi-checker-releases/issues)
+- Telegram: [@configbys](https://t.me/configbys)
+- Public issues: [GitHub Issues](https://github.com/elkhailiissam/hotmail-multi-checker-releases/issues)
+
+## Security
+
+- Report vulnerabilities privately through Telegram instead of opening a public issue.
+- See [SECURITY.md](SECURITY.md) for the current security policy.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for version history.
+- Current release notes: [CHANGELOG.md](CHANGELOG.md)
 
 ---
 

@@ -1,19 +1,45 @@
-# Releasing builds
+# Releasing Builds
 
-Published executables and disk images belong **only** under [GitHub Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases) (**Assets**), not in commits on `main`. The `.gitignore` in this repository blocks common binary extensions to reduce accidental commits.
+Published binaries belong **only** under [GitHub Releases](https://github.com/elkhailiissam/hotmail-multi-checker-releases/releases), not in commits on `main`.
 
-## Upload with GitHub CLI
+## Platform Policy
 
-Authenticate once (`gh auth login`), then attach a file to an existing release tag:
+- **Windows** receives all future public updates
+- **macOS** is archived at `1.1.0`
+- **Linux** is archived at `1.1.0`
+
+## Asset Naming
+
+Use this naming for the active Windows line:
+
+- `Hotmail.Multi-Checker-2.1.0.exe`
+
+Do not publish new macOS or Linux assets unless the platform policy changes.
+
+## GitHub CLI Flow
+
+Authenticate once:
 
 ```bash
-gh release upload v1.0.0 "Hotmail.Multi-Checker-1.0.0.exe" --clobber -R elkhailiissam/hotmail-multi-checker-releases
+gh auth login
 ```
 
-Name Windows builds like macOS/Linux (`Hotmail.Multi-Checker-1.0.0.exe`). Replace the tag and path with your version. Use `--clobber` to replace an asset with the same name.
+Create or edit the release:
+
+```bash
+gh release create v2.1.0 --title "2.1.0" --notes-file CHANGELOG.md -R elkhailiissam/hotmail-multi-checker-releases
+```
+
+Upload the Windows asset:
+
+```bash
+gh release upload v2.1.0 "Hotmail.Multi-Checker-2.1.0.exe" --clobber -R elkhailiissam/hotmail-multi-checker-releases
+```
 
 ## Checklist
 
-- Tag matches the version in release notes and user-facing docs.
-- All platforms you ship (Windows `.exe`, macOS `.dmg`, Linux `.AppImage`) are attached under **Assets**.
-- Optional: publish SHA-256 checksums in the release description for user verification.
+1. Version in the app matches the public asset version.
+2. Release notes mention Windows as the active platform.
+3. macOS and Linux remain documented as archived `1.1.0` builds only.
+4. Only Windows assets are attached for new releases.
+5. If a ZIP archive is created, verify archive integrity before publishing.
