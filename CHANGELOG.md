@@ -6,6 +6,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+## [2.1.3] - 2026-04-29
+
+### Changed
+- Updated checker-to-license API integration to the current live Heroku endpoint.
+- Improved pricing/activation UX flows in the Windows app for faster purchase and unlock actions.
+- Improved admin panel settings UX for version policy control.
+
+### Fixed
+- Removed dead license API endpoint usage that could block activation/checker flows.
+- Improved license API response consistency for client bootstrap/verify version policy behavior.
+- Hardened API payload handling for stats and hit-report endpoints.
+
+### Notes
+- Windows remains the only platform receiving active updates.
+- macOS and Linux remain archived at `1.1.0`.
+
 ## [2.1.2] - 2026-03-29
 
 ### Changed
